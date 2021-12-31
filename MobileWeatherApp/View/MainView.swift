@@ -71,10 +71,7 @@ struct MainView: View {
                     
                     
                 }
-//                                .onAppear(perform: {
-//
-//                                    mainViewModel.checkIfLocationSreviceIsEnabled()
-//                                })
+
                 .navigationBarTitle("My Location")
                 .alert(item: $mainViewModel.appError) { error in
                     Alert(title: Text("Error"), message:Text("""
@@ -136,41 +133,3 @@ struct MainView_Previews: PreviewProvider {
 
 
 
-
-
-//struct MainView: View {
-//    @ObservedObject var viewModel = WeatheViewModel()
-//
-//    var body: some View {
-//        VStack(spacing: 20){
-//
-//            Text(viewModel.cityName)
-//                .font(.largeTitle)
-//                .padding()
-//
-//            Text(viewModel.temperature)
-//                .font(.system(size: 70))
-//                .bold()
-//
-//            Image(systemName:viewModel.iconName)
-//                .font(.system(size: 100))
-//                .padding()
-//            Text(viewModel.weatherDescription)
-//                .font(.title)
-//
-//
-//        }
-//
-//
-//            .onAppear {
-//                viewModel.refresh()
-//            }
-//    }
-//
-//}
-//
-//struct MainView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MainView()
-//    }
-//}

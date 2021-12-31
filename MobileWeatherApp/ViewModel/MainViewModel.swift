@@ -74,28 +74,7 @@ final class MainViewModel: NSObject, ObservableObject{
         }
         self.isLoading=true
         let apiService = APIService.shared
-       // CLGeocoder().geocodeAddressString(location) { (placemarks, error) in
-            
-//            if let error = error as? CLError {
-//                switch error.code {
-//                case .locationUnknown, .geocodeFoundNoResult, .geocodeFoundPartialResult:
-//                    self.appError = AppError(errorString: NSLocalizedString("Unable to determine location from this text.", comment: ""))
-//                case .network:
-//                    self.appError = AppError(errorString: NSLocalizedString("You do not appear to have a network connection.", comment: ""))
-//                default:
-//                    self.appError = AppError(errorString: error.localizedDescription)
-//                }
-//
-//                //error related to location
-//                self.isLoading=false
-//                print(error.localizedDescription)
-//            }
-            
-          //  if let lat = placemarks?.first?.location?.coordinate.latitude,
-            //   let lon = placemarks?.first?.location?.coordinate.longitude {
-                // Don't forget to use your own key
-        
-        
+
         guard let latitude =  self.userLocation?.latitude , let longitude = self.userLocation?.longitude else {
             print("Can not detect longitude and latitude  ")
             return
@@ -131,7 +110,7 @@ final class MainViewModel: NSObject, ObservableObject{
         location.fetchCityAndCountry { city, country, error in
             guard let city = city, let country = country, error == nil else { return }
             self.location=city
-            print(city + ", " + country)  // Rio de Janeiro, Brazil
+            print(city + ", " + country)  
         }
 
         

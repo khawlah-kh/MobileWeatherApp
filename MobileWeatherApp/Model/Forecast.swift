@@ -29,14 +29,7 @@ struct Forecast  : Codable {
             let id : Int
             let description : String
             let main : String
-            
-              // let icon : String
-//            var weatherIconURL:URL{
-//                let urlString = "http://openweathermap.org/img/wn/\(icon)@2x.png"
-//                return URL(string: urlString)!            }
-            
-            
-            
+    
             var SFSymbol : String {
                 
                 return iconMap[main] ?? ""
