@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90DAB958277EFC43001E07E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		90EEAC6D277EEF40005A8A83 /* MobileWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EEAC70277EEF40005A8A83 /* MobileWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileWeatherAppApp.swift; sourceTree = "<group>"; };
 		90EEAC74277EEF41005A8A83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		90EEAC6F277EEF40005A8A83 /* MobileWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				90DAB958277EFC43001E07E6 /* Info.plist */,
 				90EEAC92277EF1C0005A8A83 /* View */,
 				90EEAC8B277EF18D005A8A83 /* ViewModel */,
 				90EEAC88277EF183005A8A83 /* Utils */,
@@ -336,10 +338,10 @@
 				DEVELOPMENT_TEAM = TXB8223TNS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileWeatherApp/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location in order to provide weather Info";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -367,10 +369,10 @@
 				DEVELOPMENT_TEAM = TXB8223TNS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MobileWeatherApp/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location in order to provide weather Info";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
